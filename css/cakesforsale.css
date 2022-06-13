@@ -1,0 +1,74 @@
+* {
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0;
+    overflow-x: hidden;
+}
+p, menu, ol, hr, figure, dl, blockquote, ul, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0
+}
+body {
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+header {
+    display: table;
+    position: relative;
+    width: 100%;
+    min-height: 15vmin;
+    background-color: rgba(35, 38, 42);
+}
+
+.navigationbar {
+    position: relative; 
+    width: 100%;
+    min-height: 150px;
+    background-color: rgba(35, 38, 42);
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+.logo {
+    
+}
+.headerbutton {
+    color: white;
+    font-size: 3vmin;
+    padding: 10px 10px 10px 10px;
+    display: table-cell;
+    position: relative;
+    width: 6em;
+    min-height: 60px;
+    background-color: rgb(24, 26, 27);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(35, 38, 42);
+    transition: 1s;
+}
+.burntred {
+    color: #E94D40;
+}
+
+.navyblue {
+    color: #0C243C;
+}
+
+.specialcakesfont {
+    font-family: Arial, sans-serif;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.clearboth {
+    clear: both;
+}
