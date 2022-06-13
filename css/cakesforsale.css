@@ -20,17 +20,27 @@ header {
     background-color: rgba(35, 38, 42);
 }
 
-.navigationbar {
-    position: relative; 
-    width: 100%;
-    min-height: 150px;
-    background-color: rgba(35, 38, 42);
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-    border-collapse: separate;
-    border-spacing: 15px;
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
 .logo {
     
 }
