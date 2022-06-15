@@ -2,11 +2,13 @@
     text-decoration: none;
     margin: 0 !important;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     font-size: 1em;
     line-height: 1.3em;
+    background-color: rgb(238, 238, 238);
 }
 
 header {
@@ -17,7 +19,8 @@ header {
     /* background-color: rgba(35, 38, 42); */
     padding-left: 25px;
     padding-right: 25px;
-    margin: auto
+    margin: auto;
+    
 }
 
 /* Navigation Bar Information */
@@ -25,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     padding: 20px;
+    background-color: white;
 }
 
 nav {
@@ -35,6 +39,7 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
+    /* width: 25%; */
 }
 
 nav ul li {
@@ -42,6 +47,67 @@ nav ul li {
     margin-right: 20px;
 }
 
+input, select, textarea {
+    width: 20em;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: #ccc !important;
+  }
+
+.cakesforsale {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
 .burntred {
     color: #E94D40;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
+
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.ptable{
+    width: 30%;
+}
+
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #0C243C;
+color: white;
+}
+
+
+
