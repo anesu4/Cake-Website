@@ -28,39 +28,54 @@
     </div>
 
     <div class="container">
-        <form action="">
-            <div class="row">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Please Enter Your Name">
+        <!-- Cakes For Sale -->
+        <div class="row"> 
+            <div class="col-2">
+                <h1>About Special Cakes for All Occasions</h1>
+                <p class="">Special Cakes for All Occasions started a year ago by the store owner, Sam Rice, who wanted to share their love of baking with the world. Come and taste all the delightful cakes!</p>
             </div>
-            <div class="row">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" placeholder="Please Enter Your Email">
+            <div class="col-2">
+                <img src="images/large/cheeseCake640.jpg" alt="">
             </div>
-            <div class="row">
-                <label for="email">Phone Number:</label>
-                <input type="number" id="phonenumber" placeholder="Please Enter Your Email">
+        </div>
+        
+        <br><br>
+
+        <div class="col-3">
+            <div class="col-2">
+                <h2>Job Opportunities</h2>
+                <p>Come and work for us!</p>
             </div>
-            <div class="row">
-                <label for="feedback">Type of Cake Required</label>
-                <select name="cake_type" id="cake_type">
-                    <option value="0"></option>
-                    <option value="1">Speciality cakes</option>
-                    <option value="2">Flavoured cakes</option>
-                    <option value="3">Cheesecakes</option>
-                    <option value="4">Brownies</option>
-                    <option value="5">Cupcakes</option>
-                    <option value="6">Macarons</option>
-                </select>
+            
+            <br>
+
+            <div id="table" class="col-2">
+                <table class="ptable">
+                    <tr>
+                        <th>
+                            Job Title
+                        </th>
+                        <th>
+                            Job Description
+                        </th>
+                        <th>
+                            Salary
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Pastry Chef</td>
+                        <td>Specialises in pastry desserts. Must have four years of experience.</td>
+                        <td>$50,000 p.a.</td>
+                    </tr>
+                    <tr>
+                        <td>Sales Assistant</td>
+                        <td>Serves customers in the shop and operates the cash register.</td>
+                        <td>$25,000 p.a.</td>
+                    </tr>
+                </table>
             </div>
-            <div class="row">
-                <label for="feedback">Date Required</label>
-                <input type="date" id="date"/>
-            </div>
-            <div class="row">
-                <button onclick="myFunction()">Submit!</button>
-            </div>
-        </form>
+        </div>
+        
     </div>
 
     <div class="footer">
@@ -69,16 +84,6 @@
 </body>
 
 <script>
-
-    function myFunction(){
-        var name = document.getElementById('name').value;
-        var email_address = document.getElementById('email').value;
-        var phone_num = document.getElementById('phone_number').value;
-        var cake_type = document.getElementById('cake_type').value;
-        var date = document.getElementById('date').value;
-
-        console.log('Form Information: ' + name + ' ' + email_address + ' ' + phone_num + ' ' + cake_type + ' ' + date)
-    }
     
 </script>
 

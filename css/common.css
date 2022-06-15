@@ -73,9 +73,12 @@ input, select, textarea {
     position: relative;
     height: 25px;
     margin-top: -200px; */
-    position: absolute;
-    bottom:0;
+    /* position: absolute; */
+    /* bottom:0; */
+    /* margin-top: 50px; */
+    display: block;
     width:100%;
+    margin-top: 20px;
     height:40px;  /* Height of the footer */
     text-align: center;
     background-color: #0C243C;
@@ -97,7 +100,7 @@ input, select, textarea {
 }
 
 .col-3 {
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     min-width: 25px;
     margin-bottom: 30px;
     text-align: center;
@@ -146,13 +149,16 @@ input, select, textarea {
 
 /* Table */
 .ptable{
-    width: 30%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    
 }
 
 #table td, #table th {
