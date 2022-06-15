@@ -1,18 +1,85 @@
 <!DOCTYPE html>
-<html>
-<style>
-
-</style>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>Special Cakes For All Occasions</title>
+
+    <link rel="stylesheet" href="css/common.css">
 
 </head>
 
 <body>
-    <h1>About Me</h1>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- <div class="headerbutton"> </div> -->
+                    <li><a href="cakesforsale.html">Cakes for Sale</a></li> <!-- <div class="headerbutton"> </div> -->
+                    <li><a href="contactus.html">Contact</a></li> <!-- <div class="headerbutton"> </div> -->
+                    <li><a href="aboutus.html">About</a></li> <!-- <div class="headerbutton"> </div> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Please Enter Your Name">
+            </div>
+            <div class="row">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Please Enter Your Email">
+            </div>
+            <div class="row">
+                <label for="email">Phone Number:</label>
+                <input type="number" id="phonenumber" placeholder="Please Enter Your Email">
+            </div>
+            <div class="row">
+                <label for="feedback">Type of Cake Required</label>
+                <select name="cake_type" id="cake_type">
+                    <option value="0"></option>
+                    <option value="1">Speciality cakes</option>
+                    <option value="2">Flavoured cakes</option>
+                    <option value="3">Cheesecakes</option>
+                    <option value="4">Brownies</option>
+                    <option value="5">Cupcakes</option>
+                    <option value="6">Macarons</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="feedback">Date Required</label>
+                <input type="date" id="date"/>
+            </div>
+            <div class="row">
+                <button onclick="myFunction()">Submit!</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>2022 Special Cakes. Created By Samuel Mpofu</p>
+    </div>
 </body>
 
 <script>
+
+    function myFunction(){
+        var name = document.getElementById('name').value;
+        var email_address = document.getElementById('email').value;
+        var phone_num = document.getElementById('phone_number').value;
+        var cake_type = document.getElementById('cake_type').value;
+        var date = document.getElementById('date').value;
+
+        console.log('Form Information: ' + name + ' ' + email_address + ' ' + phone_num + ' ' + cake_type + ' ' + date)
+    }
+    
 </script>
 
 </html>

@@ -5,68 +5,113 @@
         <meta charset="utf-8">
         <title>Special Cakes for All Occasions</title>
 
-        <link rel="stylesheet" href="css/cakesforsale.css"> <!-- Cakes For Sale CSS --> 
-
-        <!-- <link rel="stylesheet" href="css/common.css"> Common CSS -->
+        <link rel="stylesheet" href="css/common.css">  <!-- Common CSS -->
     </head>
 
     <body>
         <div class="header">
-            <div class="container">
-                <div class="navbar">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li> <!-- <div class="headerbutton"> </div> -->
-                            <li><a href="cakesforsale.html">Cakes for Sale</a></li> <!-- <div class="headerbutton"> </div> -->
-                            <li><a href="contactus.html">Contact</a></li> <!-- <div class="headerbutton"> </div> -->
-                            <li><a href="aboutus.html">About</a></li> <!-- <div class="headerbutton"> </div> -->
-                        </ul>
-                    </nav>
-                    <img src="images/" alt="">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+            
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="cakesforsale.html">Cakes for Sale</a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="contactus.html">Contact</a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="aboutus.html">About</a></li> <!-- <div class="headerbutton"> </div> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Cakes For Sale -->
+            <h1 class="burntred">Cakes for Sale</h1>
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/small/brownie300.jpg" alt="">
+                    <p>Speciality Cakes</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/small/lemonCake300.jpg" alt="">
+                    <p>Flavoured Cakes</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/small/strawberryCheeseCake300.jpg" alt="">
+                    <p>Cheesecakes</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/small/brownie300.jpg" alt="">
+                    <p>Brownies</p>
+                </div>
+
+                <div class="col-3">
+                    <img src="images/small/cupcake300.jpg" alt="">
+                    <p>Cupcakes</p>
+                </div>
+                <div class="col-3">
+                    <img src="images/small/macaron300.jpg" alt="">
+                    <p>Macarons</p>
                 </div>
             </div>
-        </div>
 
-        <!-- Cakes For Sale -->
-        <div class="row">
-            <h1 class="burntred">Cakes for Sale</h1>
-            <div class="col-3">
-                <img src="images/small/brownie300.jpg" alt="">
-                <p>Speciality Cakes</p>
-            </div>
-            <div class="col-3">
-                <img src="images/small/lemonCake300.jpg" alt="">
-                <p>Flavoured Cakes</p>
-            </div>
-            <div class="col-3">
-                <img src="images/small/strawberryCheeseCake300.jpg" alt="">
-                <p>Cheesecakes</p>
-            </div>
-            <div class="col-3">
-                <img src="images/small/brownie300.jpg" alt="">
-                <p>Brownies</p>
-            </div>
-        </div>
+            <div class="" id="table">
+                <p><b>Prices</b></p>
+                <table class="ptable">
+                    <tr>
+                        <th>
+                            Cake Size
+                        </th>
+                        <th>
+                            Suitable For
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Small</td>
+                        <td>8-10 people</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>10-12 people</td>
+                        <td>$60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Large</td>
+                        <td>12-16 people</td>
+                        <td>$100.00</td>
+                    </tr>
 
-        <div class="row">
-            <div class="col-3">
-                <img src="images/small/cupcake300.jpg" alt="">
-                <p>Cupcakes</p>
+                </table>
             </div>
-            <div class="col-3">
-                <img src="images/small/macaron300.jpg" alt="">
-                <p>Macarons</p>
-            </div>
-        </div>
 
+            <div class="form">
+                <br>
+                <p><b>How to order</b></p>
+                <p>If you're interested in ordering a caker for your special occasion, let us know!</p>
+                <br>
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Please Type Your Name"><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="Please Type Your Email"><br><br>
+                    <button type="submit" onclick="myFunction()" >Submit</button>
+                </form>
+            </div>
         </div>
     </body>
 
-    <style>
+    <script>
+        function myFunction(){
+            var name = document.getElementById('name').value;
+            var email_address = document.getElementById('email').value;
 
-    </style>
+            alert('Form Information: ' + name + ' ' + email_address)
+        }
+    </script>
 </html>
