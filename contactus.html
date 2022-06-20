@@ -1,85 +1,77 @@
+<!-- Samuel Mpofu -->
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>Special Cakes For All Occasions</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Special Cakes For All Occasions</title>
 
-    <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/common.css">
+    </head>
 
-</head>
-
-<body>
-    <div class="header">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt=""></a>
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Chocolate cake photo"></a>
+                </div>
+            
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><p class="specialcakesfont navyblue">Home</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="cakesforsale.html"><p class="specialcakesfont navyblue">Cakes for Sale</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="contactus.html"><p class="specialcakesfont navyblue">Contact</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="aboutus.html"><p class="specialcakesfont navyblue">About</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                    </ul>
+                </nav>
             </div>
-        
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li> <!-- <div class="headerbutton"> </div> -->
-                    <li><a href="cakesforsale.html">Cakes for Sale</a></li> <!-- <div class="headerbutton"> </div> -->
-                    <li><a href="contactus.html">Contact</a></li> <!-- <div class="headerbutton"> </div> -->
-                    <li><a href="aboutus.html">About</a></li> <!-- <div class="headerbutton"> </div> -->
-                </ul>
-            </nav>
         </div>
-    </div>
 
-    <div class="container">
-        <form action="">
-            <div class="row">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Please Enter Your Name">
-            </div>
-            <div class="row">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" placeholder="Please Enter Your Email">
-            </div>
-            <div class="row">
-                <label for="email">Phone Number:</label>
-                <input type="number" id="phonenumber" placeholder="Please Enter Your Email">
-            </div>
-            <div class="row">
-                <label for="feedback">Type of Cake Required</label>
-                <select name="cake_type" id="cake_type">
-                    <option value="0"></option>
-                    <option value="1">Speciality cakes</option>
-                    <option value="2">Flavoured cakes</option>
-                    <option value="3">Cheesecakes</option>
-                    <option value="4">Brownies</option>
-                    <option value="5">Cupcakes</option>
-                    <option value="6">Macarons</option>
-                </select>
-            </div>
-            <div class="row">
-                <label for="feedback">Date Required</label>
-                <input type="date" id="date"/>
-            </div>
-            <div class="row">
-                <button onclick="myFunction()">Submit!</button>
-            </div>
-        </form>
-    </div>
+        <div class="banner2">
+            <h1>Contact Us</h1>
+        </div>
 
-    <div class="footer">
-        <p>2022 Special Cakes. Created By Samuel Mpofu</p>
-    </div>
-</body>
+        <div class="container">
+            <div class="row">
+                <p class="navyblue">Please fill out the form below and we will reach out to you back as soon as possible.</p>
+            </div>
+            <br><br>
+            <div class="form">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Please Type Your Name"><br>
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Please Type Your Email">
 
-<script>
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" placeholder=""></textarea>
 
-    function myFunction(){
-        var name = document.getElementById('name').value;
-        var email_address = document.getElementById('email').value;
-        var phone_num = document.getElementById('phone_number').value;
-        var cake_type = document.getElementById('cake_type').value;
-        var date = document.getElementById('date').value;
+                    <br><br>
 
-        console.log('Form Information: ' + name + ' ' + email_address + ' ' + phone_num + ' ' + cake_type + ' ' + date)
-    }
-    
-</script>
+                    <div class="row">
+                        <button type="submit" class="btn" onclick="myFunction()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
+        <br>
+
+        <div class="footer">
+            <p>2022 Special Cakes. Created By Samuel Mpofu</p>
+            <a href="https://www.freepik.com/photos/fruit-cake"><p>Pavlova Image Created by chandlervid85 - www.freepik.com</p></a>
+        </div>
+    </body>
+
+    <script>
+        function myFunction(){
+            var name = document.getElementById('name').value;
+            console.log(name);
+            var email_address = document.getElementById('email').value;
+            var feedback = document.getElementById('feedback').value;
+
+            alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Feedback: ' + feedback)
+        }
+    </script>
 </html>

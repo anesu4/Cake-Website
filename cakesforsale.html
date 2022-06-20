@@ -1,3 +1,4 @@
+<!-- Samuel Mpofu -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,109 +13,146 @@
         <div class="header">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <a href="index.html"><img src="images/logo.png" alt="Chocolate cake photo"></a>
                 </div>
             
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li> <!-- <div class="headerbutton"> </div> -->
-                        <li><a href="cakesforsale.html">Cakes for Sale</a></li> <!-- <div class="headerbutton"> </div> -->
-                        <li><a href="contactus.html">Contact</a></li> <!-- <div class="headerbutton"> </div> -->
-                        <li><a href="aboutus.html">About</a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="index.html"><p class="specialcakesfont navyblue">Home</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="cakesforsale.html"><p class="specialcakesfont navyblue">Cakes for Sale</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="contactus.html"><p class="specialcakesfont navyblue">Contact</p></a></li> <!-- <div class="headerbutton"> </div> -->
+                        <li><a href="aboutus.html"><p class="specialcakesfont navyblue">About</p></a></li> <!-- <div class="headerbutton"> </div> -->
                     </ul>
                 </nav>
             </div>
         </div>
 
+        <div class="banner2">
+            <h1>Cakes for Sale</h1>
+        </div>
+
         <div class="container">
             <!-- Cakes For Sale -->
-            <h1 class="burntred">Cakes for Sale</h1>
+            <h1 class="burntred">Amazing Selection of Cakes</h1>
             <div class="row">
                 <div class="col-3">
-                    <img src="images/small/cakeIcing300.jpg" alt="">
+                    <img src="images/small/cakeIcing300.jpg" alt="Speciality Cakes">
                     <p>Speciality Cakes</p>
                 </div>
                 <div class="col-3">
-                    <img src="images/small/lemonCake300.jpg" alt="">
+                    <img src="images/small/lemonCake300.jpg" alt="Flavoured Cakes">
                     <p>Flavoured Cakes</p>
                 </div>
                 <div class="col-3">
-                    <img src="images/small/strawberryCheeseCake300.jpg" alt="">
+                    <img src="images/small/strawberryCheeseCake300.jpg" alt="Cheesecakes">
                     <p>Cheesecakes</p>
                 </div>
                 <div class="col-3">
-                    <img src="images/small/brownie300.jpg" alt="">
+                    <img src="images/small/brownie300.jpg" alt="Brownies">
                     <p>Brownies</p>
                 </div>
 
                 <div class="col-3">
-                    <img src="images/small/cupcake300.jpg" alt="">
+                    <img src="images/small/cupcake300.jpg" alt="Cupcakes">
                     <p>Cupcakes</p>
                 </div>
                 <div class="col-3">
-                    <img src="images/small/macaron300.jpg" alt="">
+                    <img src="images/small/macaron300.jpg" alt="Macarons">
                     <p>Macarons</p>
                 </div>
             </div>
 
-            <div class="" id="table">
-                <p><b>Prices</b></p>
-                <table class="ptable">
-                    <tr>
-                        <th>
-                            Cake Size
-                        </th>
-                        <th>
-                            Suitable For
-                        </th>
-                        <th>
-                            Price
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Small</td>
-                        <td>8-10 people</td>
-                        <td>$50.00</td>
-                    </tr>
-                    <tr>
-                        <td>Medium</td>
-                        <td>10-12 people</td>
-                        <td>$60.00</td>
-                    </tr>
-                    <tr>
-                        <td>Large</td>
-                        <td>12-16 people</td>
-                        <td>$100.00</td>
-                    </tr>
-                </table>
+            <div class="col-2">
+                <div id="table">
+                    <h2 class="burntred"><b>Prices</b></h2>
+                    <table class="ptable">
+                        <tr>
+                            <th>
+                                Cake Size
+                            </th>
+                            <th>
+                                Suitable For
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Small</td>
+                            <td>8-10 people</td>
+                            <td>$50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Medium</td>
+                            <td>10-12 people</td>
+                            <td>$60.00</td>
+                        </tr>
+                        <tr>
+                            <td>Large</td>
+                            <td>12-16 people</td>
+                            <td>$100.00</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+            
+            <br>
 
-            <div class="form">
-                <br>
-                <p><b>How to order</b></p>
-                <p>If you're interested in ordering a caker for your special occasion, let us know!</p>
-                <br>
-                <form action="">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Please Type Your Name"><br>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" placeholder="Please Type Your Email"><br><br>
-                    <button type="submit" onclick="myFunction()" >Submit</button>
-                </form>
-            </div>
+            <div class="row">
+                <div class="form">
+                    <p><b>How to order</b></p>
+                    <p>If you're interested in ordering a caker for your special occasion, let us know!</p>
+                    <br>
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Please Enter Your Name" required>
+    
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Please Enter Your Email" required>
+    
+                        <label for="email">Phone Number</label>
+                        <input type="number" id="phonenumber" placeholder="Please Enter Your Email" required>
+                    
+                        <label for="cake_type">Type of Cake Required</label>
+                        <select id="cake_type" required>
+                            <option selected disabled>Please Select a Cake from the Selection</option>
+                            <option>Speciality cakes</option>
+                            <option>Flavoured cakes</option>
+                            <option>Cheesecakes</option>
+                            <option>Brownies</option>
+                            <option>Cupcakes</option>
+                            <option>Macarons</option>
+                        </select>
+    
+                        <label for="date">Date Required</label>
+                        <input type="date" id="date" required/>
+                    
+                        <br><br>
+    
+                        <div class="row">
+                            <button class="btn" id="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>            
         </div>
 
         <div class="footer">
             <p>2022 Special Cakes. Created By Samuel Mpofu</p>
+            <a href="https://www.freepik.com/photos/fruit-cake"><p>Pavlova Image Created by chandlervid85 - www.freepik.com</p></a>
         </div>
     </body>
 
     <script>
-        function myFunction(){
+        const btn = document.querySelector('#btn');
+        btn.onclick = (event) => {
             var name = document.getElementById('name').value;
             var email_address = document.getElementById('email').value;
+            var phone_num = document.getElementById('phonenumber').value;
+            var cake_type = document.getElementById('cake_type').value
+            var date = document.getElementById('date').value;
 
-            alert('Form Information: ' + name + ' ' + email_address)
+            alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Phone Number: ' + phone_num + '\n Cake Type: ' + cake_type + '\n Date: ' + date)
         }
     </script>
 </html>
