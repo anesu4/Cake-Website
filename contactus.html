@@ -39,13 +39,13 @@
             <div class="form">
                 <form>
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Please Type Your Name"><br>
+                    <input type="text" id="name" name="name" placeholder="Please Type Your Name" required><br>
                     
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Please Type Your Email">
+                    <input type="email" id="email" placeholder="Please Type Your Email" required>
 
                     <label for="feedback">Feedback</label>
-                    <textarea id="feedback" placeholder=""></textarea>
+                    <textarea id="feedback" placeholder="" required></textarea>
 
                     <br><br>
 
@@ -67,11 +67,15 @@
     <script>
         function myFunction(){
             var name = document.getElementById('name').value;
-            console.log(name);
             var email_address = document.getElementById('email').value;
             var feedback = document.getElementById('feedback').value;
 
-            alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Feedback: ' + feedback)
+            if (name && email_address && feedback){
+                alert('We will be in contact soon. Please notify us if you have any allegies or preferences you would like to discuss when ordering.');
+                alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Feedback: ' + feedback)
+            } else {
+                alert('Please Fill Out All Fields Correctly')
+            }
         }
     </script>
 </html>
