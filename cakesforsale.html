@@ -152,9 +152,12 @@
             var cake_type = document.getElementById('cake_type').value
             var date = document.getElementById('date').value;
 
-            alert('We will be in contact soon. Please notify us if you have any allegies or preferences you would like to discuss when ordering.');
-            
-            alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Phone Number: ' + phone_num + '\n Cake Type: ' + cake_type + '\n Date: ' + date)
+            if (name && email_address && phone_num && cake_type && date){
+                alert('We will be in contact soon. Please notify us if you have any allegies or preferences you would like to discuss when ordering.');
+                alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Phone Number: ' + phone_num + '\n Cake Type: ' + cake_type + '\n Date: ' + date)
+            } else {
+                alert('Please Fill Out All Fields')
+            }
         }
     </script>
 </html>
