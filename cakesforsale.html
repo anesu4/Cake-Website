@@ -103,7 +103,7 @@
                     <p><b>How to order</b></p>
                     <p>If you're interested in ordering a caker for your special occasion, let us know!</p>
                     <br>
-                    <form action="">
+                    <form>
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Please Enter Your Name" required>
     
@@ -114,8 +114,8 @@
                         <input type="number" id="phonenumber" placeholder="Please Enter Your Email" required>
                     
                         <label for="cake_type">Type of Cake Required</label>
-                        <select id="cake_type" required>
-                            <option selected disabled>Please Select a Cake from the Selection</option>
+                        <select id="cake_type">
+                            <option value="" disabled selected>Please Select a Cake from the Selection</option>
                             <option>Speciality cakes</option>
                             <option>Flavoured cakes</option>
                             <option>Cheesecakes</option>
@@ -152,6 +152,8 @@
             var cake_type = document.getElementById('cake_type').value
             var date = document.getElementById('date').value;
 
+            alert('We will be in contact soon. Please notify us if you have any allegies or preferences you would like to discuss when ordering.');
+            
             alert('Submit Button has been Pressed! \n\n Customer Name: ' + name + '\n Email Address: ' + email_address + '\n Phone Number: ' + phone_num + '\n Cake Type: ' + cake_type + '\n Date: ' + date)
         }
     </script>
